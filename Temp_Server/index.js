@@ -93,7 +93,7 @@ app.delete('/temperatures/:cityName', async (req, res) => {
 
 // Start the server
   mongoose.set("strictQuery", false)
-  mongoose.connect('mongodb+srv://lanjewarvaibhav56:VaibhavLanjewar12345@cluster0.phq7pcx.mongodb.net/?retryWrites=true&w=majority')
+  mongoose.connect('mongodb+srv://lanjewarvaibhav56:(password)@cluster0.phq7pcx.mongodb.net/?retryWrites=true&w=majority')
  .then(() => {
     console.log('connected to MongoDB')
     app.listen(3006, ()=> {
